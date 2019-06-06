@@ -16,12 +16,12 @@ with open(csvpath, newline= '') as csvfile:
         total_month = len(month)
 
 # Net Total (sum of profit/losses)
-        net_total.append(int(row[1])
+        net_total.append(int(row[1]) 
     
 # Average change= Average of(current month - previous month)
-revenue_change= []
-    for i in range(1, len(net_total)):
-        revenue_change.append((int(net_total)[i])-int(net_total[i-1]))
+    revenue_change = []
+        for i in range(1, len(net_total)):
+            revenue_change.append((int(net_total)[i])-int(net_total[i-1]))
 
     revenue_average = sum(revenue_change)/len(revenue_change)
 
